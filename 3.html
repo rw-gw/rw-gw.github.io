@@ -1,56 +1,58 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8"> 
-	<title>Climate Risk Disclosure of S&P 500 Firms</title>
-	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
-	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="./style.css">  
+    <meta charset="utf-8">
+    <title>Climate Risk Disclosure of S&P 500 Firms</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>Climate Risk Disclosure of S&P 500 Firms</h1>
-</div>
-
-
-<div class="container">
-	<ul class="title">
-		<li><a href="./1.html">Summary Statistics</a></li>
-		<li><a href="./2.html">Texts in Climate Risk Disclosure</a></li>
-		<li class="cur"><a href="./3.html">Discovering Hidden Topics</a></li>
-	</ul>
-</div>
-
-<div class="container">
-  <div class="row">
-
-    <div class="col-sm-12">	
-		<h2>Discovering Hidden Topics in Climate Risk Disclosure in Item 1A. Risk Factors (Topic Analysis Using LDA)</h2>
-		<h5>What is the distribution of dominant topics for each year? </h5>
-		<div class="fimg"><img src="./figs/031-1dominant_topic-year.png" ></div>
-		<div class="fimg"><img src="./figs/031-2dominant_topic-year2.png" ></div>
-		<div class="fimg"><img src="./figs/031-3dominant_topic-year3.png" ></div>
-
-		<h3>How do we make sense of these topics?</h3>
-		
-		<ul id="topics" class="topics"></ul>
-		<div style="clear:both"></div>
-
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>Climate Risk Disclosure of S&P 500 Firms</h1>
     </div>
-  </div>
-</div>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>WR</p>
-</div>
-<script lang="javascript">
-for (i = 0; i < 30; i++) {
-	var ele = document.createElement('li');
-	ele.innerHTML = '<h5>Topic'+i+'</h5><div class="timg"><img src="./figs/032-wordclouds/Topic'+i+'.png" ></div>';
-	document.getElementById('topics').appendChild(ele);
-}
-</script>
+
+    <div class="container">
+        <ul class="title">
+            <li><a href="./1.html">Summary Statistics</a></li>
+            <li><a href="./2.html">Texts in Climate Risk Disclosure</a></li>
+            <li class="cur"><a href="./3.html">Discovering Hidden Topics</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12">
+                <h2>Discovering Hidden Topics in Climate Risk Disclosure in Item 1A. Risk Factors (Topic Analysis Using LDA)</h2>
+                <h5>What is the distribution of dominant topics for each year? </h5>
+                <div class="fimg"><img src="./figs/031-1dominant_topic-year.png"></div>
+                <div class="fimg"><img src="./figs/031-2dominant_topic-year2.png"></div>
+                <div class="fimg"><img src="./figs/031-3dominant_topic-year3.png"></div>
+
+                <h3>How do we make sense of these topics?</h3>
+
+                <ul id="topics" class="topics"></ul>
+                <div style="clear:both"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <p>WR</p>
+    </div>
+    <script lang="javascript">
+        for (i = 0; i < 30; i++) {
+            var ele = document.createElement('li');
+            ele.innerHTML = '<h5>Topic' + i + '</h5><div class="timg"><img src="./figs/032-wordclouds/Topic' + i + '.png" ></div>';
+            document.getElementById('topics').appendChild(ele);
+        }
+    </script>
 </body>
+
 </html>

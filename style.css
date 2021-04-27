@@ -1,25 +1,22 @@
-.fimg img{
+.fimg img {
     width: 900px;
     padding: 10px;
-    
 }
-.title li{
+
+.title li {
     padding: 10px 0px 10px 0px;
     float: left;
-    width:33%;
+    width: 33%;
     list-style-type: none;
     font-size: 16px;
     font-weight: bold;
-
 }
 
-.cur a{
+.cur a {
     color: coral;
 }
 
-
-
-.topics li{
+.topics li {
     list-style-type: none;
     float: left;
     width: 20%;
@@ -28,7 +25,7 @@
     text-align: center;
 }
 
-.timg img{
+.timg img {
     width: 95%;
     padding: 10px;
 }
